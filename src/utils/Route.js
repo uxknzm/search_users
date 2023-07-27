@@ -1,11 +1,16 @@
 
 import HomePage from "../pages/Home/HomePage";
-import { HOME } from "./CONST";
+import ProfilePage from "../pages/ProfilePage.jsx/ProfilePage";
+import { HOME, PROFILE } from "./CONST";
 
 export const publicRoutes = [
     {
         path: HOME,
         Component: HomePage
+    },
+    {
+        path: PROFILE,
+        Component: ProfilePage
     }
 ]
 

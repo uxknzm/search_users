@@ -1,6 +1,7 @@
 import { Table } from "antd";
 import React, { useEffect, useState } from "react";
 import InputContainer from "./InputContainer";
+import { Link } from "react-router-dom";
 
 const Users = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -61,7 +62,7 @@ const Users = () => {
           link repositories
         </a>
       ),
-      description: <a>open profile</a>,
+      description: <Link to={`/profile/${user.login}`}>open profile</Link>,
     };
   });
   const onChange = ({ current }, filters, { order }) => {
